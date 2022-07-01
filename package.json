@@ -2,7 +2,11 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.113.0",
     "@aws-sdk/client-sns": "^3.112.0",
-    "@aws-sdk/credential-provider-cognito-identity": "^3.112.0"
+    "@aws-sdk/credential-provider-cognito-identity": "^3.112.0",
+    "FileReader": "^0.10.2",
+    "fs": "^0.0.1-security",
+    "graceful-fs": "^4.2.10",
+    "memfs": "^3.4.7"
   },
   "devDependencies": {
     "path-browserify": "^1.0.1",

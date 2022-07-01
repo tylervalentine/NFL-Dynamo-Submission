@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <style>
 
 body {
-  background-image: url("lombardi-trophy.png");
+  background-image: url("original.jpg");
   background-size: cover;
   opacity: 0.9;
 }
@@ -34,8 +35,8 @@ td {
     <script type="text/javascript" src="./main.js/main.js"></script>
 </head>
 <body>
-<h1>Super Bowl Predictions</h1>
-<p>Enter a value for each playoff matchup and choose Submit. The ID must be a numerical value. </p>
+<h1>Random Question Challenge</h1>
+<p>Test your knowledge with these 13 questions:</p>
 <table style="width:100%">
     <tr>
         <td>ID:</td>
@@ -43,68 +44,470 @@ td {
     </tr>
     <tr>
         <td>First Name:</td>
-        <td><input type="text" id="first_name" name="first_name"/></td>
+        <td><input type="text" id="first_name" name="first_name"></td>
     </tr>
     <tr>
         <td>Last Name:</td>
-        <td><input type="text" id="last_name" name="last_name"/></td>
+        <td><input type="text" id="last_name" name="last_name"></td>
     </tr>
     <tr>
-        <td>AFC Wild Card Winner:</td>
-        <td><input type="text" id="afc_wild_card_one" name="afc_wild_card_one"/></td>
+        <td id="question1_text"></td>
+        <td><input type="text" id="question1" name="question1"></td>
     </tr>
     <tr>
-        <td>AFC Wild Card Winner:</td>
-        <td><input type="text" id="afc_wild_card_two" name="afc_wild_card_two"/></td>
+        <td id="question2_text"></td>
+        <td><input type="text" id="question2" name="question2"></td>
     </tr>
     <tr>
-        <td>AFC Wild Card Winner:</td>
-        <td><input type="text" id="afc_wild_card_three" name="afc_wild_card_three"/></td>
+        <td id="question3_text"></td>
+        <td><input type="text" id="question3" name="question3"></td>
     </tr>
     <tr>
-        <td>NFC Wild Card Winner:</td>
-        <td><input type="text" id="nfc_wild_card_one" name="nfc_wild_card_one"/></td>
+        <td id="question4_text"></td>
+        <td><input type="text" id="question4" name="question4"></td>
     </tr>
     <tr>
-        <td>NFC Wild Card Winner:</td>
-        <td><input type="text" id="nfc_wild_card_two" name="nfc_wild_card_two"/></td>
+        <td id="question5_text"></td>
+        <td><input type="text" id="question5" name="question5"/></td>
     </tr>
     <tr>
-        <td>NFC Wild Card Winner:</td>
-        <td><input type="text" id="nfc_wild_card_three" name="nfc_wild_card_three"/></td>
+        <td id="question6_text"></td>
+        <td><input type="text" id="question6" name="question6"></td>
     </tr>
     <tr>
-        <td>AFC Divisional Winner:</td>
-        <td><input type="text" id="afc_divisional_one" name="afc_divisional_one"/></td>
+        <td id="question7_text"></td>
+        <td><input type="text" id="question7" name="question7"></td>
     </tr>
     <tr>
-        <td>AFC Divisional Winner:</td>
-        <td><input type="text" id="afc_divisional_two" name="afc_divisional_two"/></td>
+        <td id="question8_text"></td>
+        <td><input type="text" id="question8" name="question8"></td>
     </tr>
     <tr>
-        <td>NFC Divisional Winner:</td>
-        <td><input type="text" id="nfc_divisional_one" name="nfc_divisional_one"/></td>
+        <td id="question9_text"></td>
+        <td><input type="text" id="question9" name="question9"></td>
     </tr>
     <tr>
-        <td>NFC Divisional Winner:</td>
-        <td><input type="text" id="nfc_divisional_two" name="nfc_divisional_two"/></td>
+        <td id="question10_text"></td>
+        <td><input type="text" id="question10" name="question10"></td>
     </tr>
     <tr>
-        <td>AFC Championship Winner:</td>
-        <td><input type="text" id="afc_championship" name="afc_championship"/></td>
+        <td id="question11_text"></td>
+        <td><input type="text" id="question11" name="question11"/></td>
     </tr>
     <tr>
-        <td>NFC Championship Winner:</td>
-        <td><input type="text" id="nfc_championship" name="nfc_championship"/></td>
+        <td id="question12_text"></td>
+        <td><input type="text" id="question12" name="question12"/></td>
     </tr>
     <tr>
-        <td>Super Bowl Winner:</td>
-        <td><input type="text" id="super_bowl" name="super_bowl"/></td>
+        <td id="question13_text"></td>
+        <td><input type="text" id="question13" name="question13"></td>
     </tr>
-        <td></td>
+        <td><button type="button" onclick="fillElements();">Generate Questions</button> </td>
+        <script>
+        function fillElements(){
+          var times = 14;
+          for(var i = 1; i < times; i++)
+          {
+            const contents = ["What year was the very first model of the iPhone released?",
+        "Answer: 2007",
+        "What's the shortcut for the 'copy' function on most computers?",
+        "Answer: ctrl c",
+        "What is often seen as the smallest unit of memory?",
+        "Answer: kilobyte",
+        "Is Java a type of OS?",
+        "Answer: No",
+        "Who is often called the father of the computer?",
+        "Answer: Charles Babbage",
+        "What does 'HTTP' stand for?",
+        "Answer: HyperText Transfer Protocol",
+        "What is the name of the man who launched eBay back in 1995?",
+        "Answer: Pierre Omidyar",
+        "Which email service is owned by Microsoft?",
+        "Answer: Hotmail",
+        "Google Chrome, Safari, Firefox, and Explorer are different types of what?",
+        "Answer: Web browsers",
+        "What was Twitter's original name?",
+        "Answer: twttr",
+        "Who discovered penicillin?",
+        "Answer: Alexander Fleming",
+        "Who was the first woman to win a Nobel Prize (in 1903)?",
+        "Answer: Marie Curie",
+        "What part of the atom has no electric charge?",
+        "Answer: Neutron",
+        "What is the symbol for potassium?",
+        "Answer: K",
+        "What is meteorology the study of?",
+        "Answer: The weather",
+        "Which planet is the hottest in the solar system?",
+        "Answer: Venus",
+        "Which natural disaster is measured with a Richter scale?",
+        "Answer: Earthquakes",
+        "What animals are pearls found in?",
+        "Answer: Oysters",
+        "Which planet has the most gravity?",
+        "Answer: Jupiter",
+        "How many molecules of oxygen does ozone have?",
+        "Answer: Three",
+        "What is Hawkeye's real name?",
+        "Answer: Clint Barton",
+        "Which Avenger is the only one who could calm the Hulk down?",
+        "Answer: Black Widow",
+        "Night Crawler, member of the X'Men, has what kind of powers?",
+        "Answer: Can teleport",
+        "Which infinity stone was located on Vormir?",
+        "Answer: Soul Stone",
+        "Which original Avenger was not in the first few movies?",
+        "Answer: The Wasp",
+        "What was Superman's birth name?",
+        "Answer: Kal'El",
+        "What is the name of Batman's butler?",
+        "Answer: Alfred",
+        "Aquaman is from which city under the sea?",
+        "Answer: Atlantis",
+        "Who is Green Lantern's nemesis?",
+        "Answer: Sinestro",
+        "What does DC stand for?",
+        "Answer: Detective Comics",
+        "What is the name of the song that Queen Elsa sings as she builds her ice castle in the movie Frozen?",
+        "Answer: Let It Go",
+        "How many films did Sean Connery play James Bond in?",
+        "Answer: Seven",
+        "Which Indiana Jones movie was released back in 1984?",
+        "Answer: Indiana Jones and the Temple of Doom",
+        "How many Lord of the Rings films are there?",
+        "Answer: Three",
+        "What was the name of the actor who played Jack Dawson in Titanic?",
+        "Answer: Leonardo DiCaprio",
+        "Which popular TV show featured house Targaryen and Stark?",
+        "Answer: Game of Thrones",
+        "What was the name of the family who starred in 7th Heaven?",
+        "Answer: The Camdens",
+        "Which cartoon character lives in a pineapple under the sea?",
+        "Answer: Spongebob Squarepants",
+        "In what year was the first episode of South Park aired?",
+        "Answer: 1997",
+        "Which actor appeared in films 'Face Off' and 'Ghost Rider'?",
+        "Answer: Nicholas Cage",
+        "Who played Wolverine?",
+        "Answer: Hugh Jackman",
+        "Which actress won the Oscar for Best Actress in 2003?",
+        "Answer: Nicole Kidman",
+        "The Young Victoria was played by which British actress?",
+        "Answer: Emily Blunt",
+        "How old was Coco Gauff when she first beat Venus Williams?",
+        "Answer: 15",
+        "In which year did Usain Bolt set his 100m in 9.58 seconds world record?",
+        "Answer: 2009",
+        "How many times had Rafael Nadal won the French Open by March 2020?",
+        "Answer: 12",
+        "When Michael Jordan played for the Chicago Bulls, how many NBA Championships did he win?",
+        "Answer: Six",
+        "Who did Forbes name the youngest self'made billionaire in 2019?",
+        "Answer: Kylie Jenner",
+        "Which Dutch makeup artist came out as being transgender in 2020?",
+        "Answer: De Jager",
+        "Who played Anita in the first Broadway production of West Side Story?",
+        "Answer: Chita Rivera",
+        "In which US city is Broadway located?",
+        "Answer: New York City",
+        "What is the longest'running Broadway show?",
+        "Answer: The Phantom of the Opera",
+        "Which show is the highest'grossing production on Broadway ever?",
+        "Answer: The Lion King",
+        "In what year was Broadway established?",
+        "Answer: 1750",
+        "In which period did ballet originate?",
+        "Answer: Italian Renaissance",
+        "During which time of the year is the Nutchracker primarily performed?",
+        "Answer: During Christmas season",
+        "What French ballet term means 'in front'?",
+        "Answer: Devant",
+        "Who was the greatest male ballet dancer of the early 20th century?",
+        "Answer: Vaslav Nijinsky",
+        "What is a plie in ballet?",
+        "Answer: Bending at the knees",
+        "Who is often credited with creating the world's first car?",
+        "Answer: Karl Benz",
+        "Which animal can be seen on the Porsche logo?",
+        "Answer: Horse",
+        "Which companies are part of the Big Three?",
+        "Answer: General Motors, Fiat Chrysler Automobiles, and Ford Motor Company",
+        "Which company owns Bugatti, Lamborghini. Audi, Porsche, and Ducati?",
+        "Answer: Volkswagen",
+        "Which auto brand was the first to offer seat belts?",
+        "Answer: Nash Motors",
+        "What does BMW stand for (in English)?",
+        "Answer: Bavarian Motor Works",
+        "What or who is the Ford Mustang named after?",
+        "Answer: A fighter plane from WWII",
+        "How many parts (screws and bolts included) does the average car have?",
+        "Answer: 30, 000",
+        "Which car is often called the first muscle car?",
+        "Answer: The Pontiac GTO",
+        "In what year was the Corvette introduced?",
+        "Answer: 1953",
+        "How many soccer players should each team have on the field at the start of each match?",
+        "Answer: 11",
+        "When Michael Jordan played for the Chicago Bulls, how many NBA Championships did he win?",
+        "Answer: Six",
+        "Which Williams sister has won more Grand Slam titles?",
+        "Answer: Serena",
+        "What country won the very first FIFA World Cup in 1930?",
+        "Answer: Uruguay",
+        "In what year was the first'ever Wimbledon Championship held?",
+        "Answer: 1877",
+        "Which racer holds the record for the most Grand Prix wins?",
+        "Answer: Michael Schumacher",
+        "Which Jamaican runner is an 11'time world champion and holds the record in the 100 and 200'meter race?",
+        "Answer: Usain Bolt",
+        "Which boxer was known as 'The Greatest' and 'The People's Champion'?",
+        "Answer: Muhammad Ali",
+        "What sport was Jesse Owens involved in?",
+        "Answer: Track and field",
+        "Which hockey team did Wayne Gretzky play for in the ‘80s?",
+        "Answer: Edmonton Oilers",
+        "What is the common name for dried plums?",
+        "Answer: Prunes",
+        "What name does deer meat go by?",
+        "Answer: Venison",
+        "What other name does 'corn' go by?",
+        "Answer: Maize",
+        "What's the primary ingredient in hummus?",
+        "Answer: Chickpeas",
+        "Which country produces the most coffee in the world?",
+        "Answer: Brazil",
+        "Which country invented tea?",
+        "Answer: China",
+        "Which kind of alcohol is Russia notoriously known for?",
+        "Answer: Vodka",
+        "What is the national dish of Spain?",
+        "Answer: Paella",
+        "Which European nation was said to invent hot dogs?",
+        "Answer: Germany",
+        "Which country is responsible for giving us pizza and pasta?",
+        "Answer: Italy",
+        "Which organ has four chambers?",
+        "Answer: The heart",
+        "In which body part can you find the femur?",
+        "Answer: Leg",
+        "What is your body's largest organ?",
+        "Answer: The skin",
+        "What kind of cells are found in the brain?",
+        "Answer: Neurons",
+        "Which bone are babies born without?",
+        "Answer: Knee cap",
+        "About how many taste buds does the average human tongue have?",
+        "Answer: 10,000",
+        "What percentage of our bodies is made up of water?",
+        "Answer: 60'65%",
+        "Which element is said to keep bones strong?",
+        "Answer: Calcium",
+        "What does the acronym AIDS stand for?",
+        "Answer: Acquired Immune Deficiency Syndrome",
+        "How many times does the heartbeat per day?",
+        "Answer: 100,000",
+        "What is the name of the thin and long country that spans more than half of the western coast of South America?",
+        "Answer: Chile",
+        "Which American state is the largest (by area)?",
+        "Answer: Alaska",
+        "Which two countries share the longest international border?",
+        "Answer: Canada and the USA",
+        "What is the smallest country in the world?",
+        "Answer: Vatican City",
+        "Which continent is the largest?",
+        "Answer: Asia",
+        "Which of the Seven Wonders is located in Egypt?",
+        "Answer: The Pyramids of Giza",
+        "What is the capital of New Zealand?",
+        "Answer: Wellington",
+        "Which desert is the largest in the world?",
+        "Answer: The Sahara Desert",
+        "What is the name of the world's longest river?",
+        "Answer: The Nile",
+        "Which city in India would you find the Taj Mahal in?",
+        "Answer: Agra",
+        "By what name were the Egyptian kings/rulers known?",
+        "Answer: Pharaohs",
+        "How many Pyramids of Giza were made?",
+        "Answer: Three",
+        "Who which queen was Julius Caesar involved with?",
+        "Answer: Cleopatra",
+        "Where did the Franks settle after defeating the Romans?",
+        "Answer: Gaul",
+        "How long did the Middle Ages last?",
+        "Answer: About 1000 years",
+        "Which religion dominated the Middle Ages?",
+        "Answer: Catholicism",
+        "In which year World War I begin?",
+        "Answer: 1914",
+        "In which country Adolph Hitler was born?",
+        "Answer: Austria",
+        "John F. Kennedy was assassinated in which city?",
+        "Answer: Dallas",
+        "On Sunday 18th June 1815, which famous battle took place?",
+        "Answer: The Battle of Waterloo",
+        "What was the name of the group Justin Timberlake used to be part of?",
+        "Answer: N' SYNC",
+        "What was the name of the rock band formed by Jimmy Page?",
+        "Answer: Led Zeppelin",
+        "Which country did AC/DC originate in?",
+        "Answer: Australia",
+        "What genre of music did Taylor Swift start in?",
+        "Answer: Country",
+        "Who was the lead singer of the iconic ‘80s band, Culture Club?",
+        "Answer: Boy George",
+        "Which name is rapper Sean Combs better known by?",
+        "Answer: P. Diddy",
+        "Which musical legend is Jay'Z married to?",
+        "Answer: Beyonce",
+        "How many Grammys does John Legend have?",
+        "Answer: Ten",
+        "Which British girl group had a member by the name of Mel B?",
+        "Answer: Spice Girls",
+        "Which song by Luis Fonsi and Daddy Yankee has the most views (of all time) on YouTube?",
+        "Answer: Despacito",
+        "What is the name of the home of the Greek Gods?",
+        "Answer: Olympus",
+        "Which warrior's weakness was their heel?",
+        "Answer: Achilles",
+        "Who was the messenger of the gods?",
+        "Answer: Hermes",
+        "What's the name of the paradise warriors go to after death?",
+        "Answer: Valhalla",
+        "Thor was the son of which God?",
+        "Answer: Odin",
+        "Romulus and Remus were raised by what animal?",
+        "Answer: A she'wolf",
+        "The Roman God of War inspired the name of which planet?",
+        "Answer: Mars",
+        "What was the name of the Egyptian God of the Sun?",
+        "Answer: Ra",
+        "Anubis, the God of Death, had the head of a…",
+        "Answer: Jackal",
+        "Set throws Osiris into which river, after tricking him into a coffin?",
+        "Answer: The Nile",
+        "What author became famous for his six'volume biography of Lincoln?",
+        "Answer: Carl Sandburg",
+        "Who wrote 'Old Man and The Sea' and is considered one of the greatest writers of the 20th century?",
+        "Answer: Ernest Hemingway",
+        "What Danish author is considered by many to be the most prolific fairy tale writer?",
+        "Answer: Hans Christian Andersen",
+        "Who is the writer of 'Merchant of Venice'?",
+        "Answer: William Shakespeare",
+        "'Adventure of Sherlock Holmes' was written by which writer?",
+        "Answer: Arthur Conan Doyle",
+        "What is the name of the fourth book in the Harry Potter series?",
+        "Answer: Harry Potter and the Goblet of Fire",
+        "The Hunger Games series was written by which author?",
+        "Answer: Suzanne Collins",
+        "Which country is Aesop's Fables believed to originate in?",
+        "Answer: Greece",
+        "In Herman Melville's novel 'Moby Dick,' who was the loyal, reasonable first mate?",
+        "Answer: Starbuck",
+        "The book 'Da Vinci Code,' was written by whom?",
+        "Answer: Dan Brown",
+        "Who is seen as the most famous female American fashion icon of the 1960's?",
+        "Answer: Jacqueline Kennedy",
+        "The American designer born in 1939 as Ralph Lifshitz is better known as what?",
+        "Answer: Ralph Lauren",
+        "According to the commercial, 'what is the fabric of our lives'?",
+        "Answer: Cotton",
+        "Who invented the LBD (little black dress)?",
+        "Answer: Coco Chanel",
+        "Parkers, trenches, bombers and peas are types of what winter outerwear?",
+        "Answer: Coats",
+        "What fashion fad did the 1983 film 'Flashdance' make popular?",
+        "Answer: Legwarmers",
+        "The fashion designer, Gianni Versace, came from which country?",
+        "Answer: Italy",
+        "When was the company Nike founded?",
+        "Answer: 1971",
+        "What animal is on Levi's logo?",
+        "Answer: Horse",
+        "Which fashion brand made the 'Genius Jeans' that became part of the Guinness World Records?",
+        "Answer: Gucci",
+        "What is the tallest building in the world?",
+        "Answer: Burj Khalifa",
+        "When did construction on the Empire State building started?",
+        "Answer: 1929",
+        "Who designed the Sydney Opera House?",
+        "Answer: Jorn Utzon",
+        "Between 1933 to 1947, the Hoover Dam was called what?",
+        "Answer: Boulder Dam",
+        "Where can you find the Petronas Towers?",
+        "Answer: Kuala Lumpur",
+        "Who invented the bidet?",
+        "Answer: Christophe Des Rosiers",
+        "What is the smallest size bed available in the United States?",
+        "Answer: Twin",
+        "Stripes, chevron, floral, and plaid are examples of what?",
+        "Answer: Patterns",
+        "What design style uses lots of sea/ocean themed items?",
+        "Answer: Nautical",
+        "What's another name for a footrest?",
+        "Answer: Ottoman",
+        "Which American president was involved in the Watergate scandal?",
+        "Answer: Nixon",
+        "What are the surnames of the father'son duos who both served as US presidents?",
+        "Answer: Adams and Bush",
+        "How many presidents have been impeached?",
+        "Answer: Three",
+        "Before the laws were changed in 2000, how long was a French president's term?",
+        "Answer: Seven years",
+        "Who has been the longest'serving monarch of the United Kingdom?",
+        "Answer: Queen Elizabeth II",
+        "World War I began with the death of Archduke Franz Ferdinand, of which country?",
+        "Answer: Austria",
+        "Donald Trump and which North Korean leader are known to trade threats over the internet?",
+        "Answer: Kim Jong Un",
+        "What was Mao Zedong famous for?",
+        "Answer: Leading the Communist Party of China to victory during a Civil War",
+        "Leader and political icon Nelson Mandela was from which African country?",
+        "Answer: South Africa",
+        "The largest political party in South Africa, the ANC, stands for what?",
+        "Answer: African National Congress",
+        "What is the legal term for a voluntary written statement made under oath?",
+        "Answer: Affidavit",
+        "What is the name of the classification of crime which is less serious than a felony?",
+        "Answer: Misdemeanor",
+        "A verdict is a...",
+        "Answer: Decision or judgment",
+        "What is evidence in court, where a person tells everything they saw or know?",
+        "Answer: Testimony",
+        "Who is the group of people sworn to make a decision/deliver a verdict in court?",
+        "Answer: Jury",
+        "What was the verdict in the O.J. Simpson murder trial?",
+        "Answer: Not guilty",
+        "How many homicides did Ted Bundy admit to?",
+        "Answer: 30",
+        "Ted Kaczynski was a former graduate of which university?",
+        "Answer: Harvard",
+        "Gregory Lee Johnson was convicted in Texas for what in 1989?",
+        "Answer: Burning the flag",
+        "Butch Cassidy was famous for doing what?",
+        "Answer: Stealing"]
+            var num = Math.floor(Math.random() * 376);
+            var question = "";
+            var answer = "";
+
+            if(num % 2 == 0)
+            {
+              question = contents[num];
+              answer = contents[num + 1];
+            }
+
+            else
+            {
+              question = contents[num + 1];
+              answer = contents[num + 2];
+            }
+            document.getElementById("question" + i + "_text").innerHTML = "Question 1: " + question;
+          }
+
+        }
+        </script>
         <td><button type="button" onclick="submitData();">Submit</button></td>
         <script src="./main.js/main.js"></script>
-    </tr>
 </table>
 </body>
 </html>

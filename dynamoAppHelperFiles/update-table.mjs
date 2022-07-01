@@ -6,24 +6,24 @@ const randid = (Math.floor(Math.random() * 512)).toString();
 
 // Set the parameters
 export const params = {
-  TableName: "NFLPlayoffPredictions2022",
+  TableName: "RandomQuestionSubmissions",
   Item: {
     id: { N: (Math.floor(Math.random() * 512)).toString()},
     first_name: { S: "Tyler" },
     last_name: { S: "Valentine" },
-    afc_wild_card_one: { S: "Ex" },
-    afc_wild_card_two: { S: "Ex" },
-    afc_wild_card_three: { S: "Ex" },
-    nfc_wild_card_one: { S: "Ex" },
-    nfc_wild_card_two: { S: "Ex" },
-    nfc_wild_card_three: { S: "Ex" },
-    afc_divisional_one: { S: "Ex" },
-    afc_divisional_two: { S: "Ex" },
-    nfc_divisional_one: { S: "Ex" },
-    nfc_divisional_two: { S: "Ex" },
-    afc_championship: { S: "Ex" },
-    nfc_championship: { S: "Ex" },
-    super_bowl: { S: "Ex" },
+    question1: { S: "Ex" },
+    question2: { S: "Ex" },
+    question3: { S: "Ex" },
+    question4: { S: "Ex" },
+    question5: { S: "Ex" },
+    question6: { S: "Ex" },
+    question7: { S: "Ex" },
+    question8: { S: "Ex" },
+    question9: { S: "Ex" },
+    question10: { S: "Ex" },
+    question11: { S: "Ex" },
+    question12: { S: "Ex" },
+    question13: { S: "Ex" },
   },
 };
 
