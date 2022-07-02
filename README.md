@@ -1,4 +1,4 @@
-# NFL-Dynamo-Submission
+# Random-Questions-Submission
 
 ## Table of Contents
 * [Introduction](#Introduction)
@@ -7,7 +7,7 @@
 
 ### Introduction
 
-NFL-Dynamo-Submission is a simple application to submit data to an Amazon DynamoDB table. This project is based a cross-service Node.js tutorial featured on [this AWS link](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/cross-service-example-submitting-data.html). Once the application is running, it will ask the user for the winners of each National Football League (NFL) playoff game winner and submit each answer. The submit button at the bottom of the application will send all previous answers to the DynamoDB table.
+Random-Questions-Submission is a simple application to submit data to an Amazon DynamoDB table. This project is based a cross-service Node.js tutorial featured on [this AWS link](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/cross-service-example-submitting-data.html). Once the application is running, it will ask the user randomly-generated questions from the 'generate questions' button. The 'submit' button at the bottom of the application will send all previous answers to the DynamoDB table.
 
 ### Technologies
 * [HTML](https://html.com)
@@ -20,5 +20,5 @@ NFL-Dynamo-Submission is a simple application to submit data to an Amazon Dynamo
 ### Setup
 1. Download code, unzip file
 2. Double-click on ```index.html``` to open the application in a new web browser
-3. Enter your prediction for each game and hit the ```submit``` button at the bottom of the page
+3. Enter your answer for each question and hit the ```submit``` button at the bottom of the page
 4. The answers will be submitted to the DynamoDB table.
